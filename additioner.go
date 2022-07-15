@@ -15,8 +15,9 @@ func Logg(Log bool) {
 	}
 }
 
-func Addition(firstValue, secondValue float64) float64 {
+func Additioner(firstValue, secondValue float64) float64 {
 	result := firstValue + secondValue
-	log.Println("Value is", result)
+	log.SetPrefix("LOG: ")
+	log.Println("Answer= ", result)
 	return result
 }
